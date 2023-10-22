@@ -10,9 +10,9 @@ const TrafficLight = () => {
 			<div className="stick">
 			</div>
 			<div className="box text-center">
-				<div className="light">Red</div>
-				<div className="light">Yellow</div>
-				<div className="light">Green</div>
+				<div className="red light"></div>
+				<div className="yellow light"></div>
+				<div className="green light"></div>
 			</div>
 		</div>
 	);
