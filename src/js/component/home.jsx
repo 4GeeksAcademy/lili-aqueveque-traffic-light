@@ -4,7 +4,7 @@ import React from "react";
 import rigoImage from "../../img/rigo-baby.jpg";
 
 //create your first component
-const Home = () => {
+const TrafficLight = () => {
 	return (
 		<div className="text-center">
 			<h1 className="text-center mt-5">Hello Rigo!</h1>
@@ -23,7 +23,7 @@ const Home = () => {
 	);
 };
 
-export default Home;
+export default TrafficLight;
 
 //Instrucciones:
 //The light has to glow when clicked.
@@ -36,8 +36,6 @@ const [ color, setColor] = useState("red");
 
 Use the setColor function to change the color and the component will automatically re-render (because it's hooked with useState).
 
-Use the ReactDOM.render to render the component into the DOM like this
 
-ReactDOM.render(<TrafficLight />, document.querySelector('#app'));
 
 */
