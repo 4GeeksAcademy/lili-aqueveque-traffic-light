@@ -1,4 +1,27 @@
-
+.stick {
+    background-color: black;
+    height: 150px;
+    width: 15px;
+    margin: auto;
+    margin-top: 8px;
+}
+.box {
+    background-color:black;
+    height: 375px;
+    width: 150px;
+    align-items: center;
+    justify-content: space-between;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+}
+.light {
+    background-color: red;
+    flex: 1;
+    width: 125px;
+    border-radius: 55%;
+}
 /* 
 
     You can write your own styles here...
