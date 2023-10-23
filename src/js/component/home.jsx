@@ -1,18 +1,28 @@
-import React from "react";
+import React, { useState } from "react";
 
-//include images into your bundle
-import rigoImage from "../../img/rigo-baby.jpg";
-
-//create your first component
 const TrafficLight = () => {
+	const [activeLight, setActiveLight] = useState(null);
+
+	const handleLightClick = (light) => {
+		setActiveLight(light);
+	};
+
 	return (
 		<div className="traffic">
-			<div className="stick">
-			</div>
+			<div className="stick"></div>
 			<div className="box text-center">
-				<div className="red light"></div>
-				<div className="yellow light"></div>
-				<div className="green light"></div>
+				<div
+					className={`red light ${activeLight === 'red' ? 'on' : ''}`}
+					onClick={() => handleLightClick('red')}
+				></div>
+				<div
+					className={`yellow light ${activeLight === 'yellow' ? 'on' : ''}`}
+					onClick={() => handleLightClick('yellow')}
+				></div>
+				<div
+					className={`green light ${activeLight === 'green' ? 'on' : ''}`}
+					onClick={() => handleLightClick('green')}
+				></div>
 			</div>
 		</div>
 	);
